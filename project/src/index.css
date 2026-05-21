@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply bg-white text-ink font-sans antialiased;
+  }
+  ::selection {
+    background: #cfe3f7;
+    color: #1f2328;
+  }
+}
+
+@layer components {
+  .wiki-link {
+    @apply text-accent border-b border-transparent transition-colors;
+    text-decoration: none;
+  }
+  .wiki-link:hover {
+    @apply border-accent;
+  }
+
+  .prose-wiki h2 {
+    @apply font-serif font-medium text-[1.5rem] leading-tight border-b border-rule pb-1.5 mt-10 mb-4 scroll-mt-24;
+  }
+  .prose-wiki h3 {
+    @apply font-serif font-medium text-[1.15rem] mt-7 mb-2 scroll-mt-24;
+  }
+  .prose-wiki p {
+    @apply mb-4 leading-[1.75] text-ink;
+    text-wrap: pretty;
+  }
+  .prose-wiki ul {
+    @apply mb-4 pl-5 list-disc;
+  }
+  .prose-wiki ul li {
+    @apply mb-1.5 leading-[1.7];
+  }
+  .prose-wiki a {
+    @apply text-accent;
+  }
+  .prose-wiki a:hover {
+    @apply underline;
+  }
+
+  .dotgrid {
+    background-image: radial-gradient(#d8dee4 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+  .stripe-placeholder {
+    background-image: repeating-linear-gradient(
+      135deg,
+      #f6f8fa,
+      #f6f8fa 10px,
+      #eaeef2 10px,
+      #eaeef2 20px
+    );
+  }
+}
