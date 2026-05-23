@@ -10,11 +10,11 @@ export default function Navbar() {
     <header className="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-rule">
       <div className="max-w-wiki mx-auto px-6 lg:px-10 h-14 flex items-center justify-between">
         <Link to="/" className="flex items-baseline gap-2 group">
-          <span className="font-mono text-[15px] font-semibold text-ink tracking-tight">
-            keychen
+          <span className="inline-flex items-baseline">
+            <span className="font-mono text-[15px] font-semibold text-ink tracking-tight">keychen</span>
+            <span className="font-mono text-[15px] text-ink">.dev</span>
           </span>
-          <span className="font-mono text-[15px] text-accent">.dev</span>
-          <span className="ml-2 hidden sm:inline font-mono text-[11px] text-muted uppercase tracking-[0.18em]">
+          <span className="hidden sm:inline font-mono text-[11px] text-muted uppercase tracking-[0.18em]">
             Portfolio · v1
           </span>
         </Link>
