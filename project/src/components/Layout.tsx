@@ -16,14 +16,8 @@ export function PageShell({
   infobox?: ReactNode;
   breadcrumbs?: Crumb[];
 }) {
-  const mainCol =
-    sidebar && infobox
-      ? 'md:col-span-6'
-      : sidebar
-      ? 'md:col-span-9'
-      : infobox
-      ? 'md:col-span-9'
-      : 'md:col-span-12';
+  const hasLeft = !!(sidebar || infobox);
+  const mainCol = hasLeft ? 'md:col-span-9' : 'md:col-span-12';
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
@@ -49,13 +43,13 @@ export function PageShell({
             </nav>
           )}
           <div className="grid grid-cols-12 gap-x-8 gap-y-10">
-            {sidebar && (
-              <div className="col-span-12 md:col-span-3">{sidebar}</div>
+            {hasLeft && (
+              <div className="col-span-12 md:col-span-3 space-y-6">
+                {sidebar}
+                {infobox}
+              </div>
             )}
             <div className={'col-span-12 ' + mainCol}>{children}</div>
-            {infobox && (
-              <div className="col-span-12 md:col-span-3">{infobox}</div>
-            )}
           </div>
         </div>
       </main>
