@@ -62,11 +62,19 @@ export default function ProjectCard({
           </div>
         </div>
         <div className="hidden md:block shrink-0 self-stretch">
-          <div className="w-32 h-full min-h-[100px] stripe-placeholder border border-rule rounded-[2px] flex items-center justify-center">
-            <span className="font-mono text-[10px] text-muted/80 -rotate-90 tracking-widest uppercase">
-              thumbnail
-            </span>
-          </div>
+          {p.thumbnail ? (
+            <img
+              src={p.thumbnail}
+              alt={p.name}
+              className="w-32 h-full min-h-[100px] object-contain border border-rule rounded-[2px] bg-chip p-2"
+            />
+          ) : (
+            <div className="w-32 h-full min-h-[100px] stripe-placeholder border border-rule rounded-[2px] flex items-center justify-center">
+              <span className="font-mono text-[10px] text-muted/80 -rotate-90 tracking-widest uppercase">
+                thumbnail
+              </span>
+            </div>
+          )}
         </div>
       </div>
     </Link>

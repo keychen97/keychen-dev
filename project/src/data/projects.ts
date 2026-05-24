@@ -9,6 +9,7 @@ export type Project = {
   url: string;
   timeline: string;
   cardAccent: string;
+  thumbnail?: string;
   overview: string[];
   concept: string[];
   stack: { group: string; items: string[] }[];
@@ -29,6 +30,7 @@ export const projects: Project[] = [
     url: 'fin-cloud.app',
     timeline: '40 天極速交付',
     cardAccent: '#0066CC',
+    thumbnail: '/fincloud-logo.png',
     overview: [
       'FinCloud 是專為缺乏專職雲端管理人員的小型新創團隊打造的多雲成本控管平台。整合 AWS 與 GCP 帳單資料、資源監控、異常偵測與優化建議，以直觀的 Dashboard 介面讓不熟悉雲端的團隊也能輕鬆掌握雲端支出，並在超支前提早收到通知。',
       '產品在 40 天內由雙人團隊極速交付。我負責前端完整架構、雲端 SDK 串接、以及以使用者思維驅動的介面設計。',
@@ -74,6 +76,7 @@ export const projects: Project[] = [
     url: 'mohuhu.pair.tw',
     timeline: '40 天極速交付',
     cardAccent: '#0066CC',
+    thumbnail: '/mohuhu-logo.png',
     overview: [
       'Mohuhu 是專為高資安企業環境打造的台灣上市公司智能搜尋引擎。整合公司基本資料、季度財報、每日股價與董監事網絡，提供注音輸入容錯與多策略模糊搜尋功能，並支援打包為獨立地端離線執行檔。',
       '六人團隊 40 天極速交付，產品已上架並有企業導入驗證。我負責前端架構與 API 串接。',
