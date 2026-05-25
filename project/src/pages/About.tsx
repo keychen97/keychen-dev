@@ -20,7 +20,7 @@ export default function About() {
       title="Key Chen"
       subtitle="// curriculum vitae"
       rows={[
-        ['Name', '陳冠閔 / Key Chen'],
+        ['Name', '陳芝宇 / Key Chen'],
         ['Role', '前端 + 雲端工程師'],
         ['Based', profile.location],
         ['Status', profile.status],
