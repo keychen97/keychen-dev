@@ -38,8 +38,7 @@ export type Profile = {
 export const profile: Profile = {
   name: 'Key Chen',
   handle: 'keychen.dev',
-  tagline:
-    '前端 + 雲端工程師 — 從媒體業跨領域，專注多雲整合、Dashboard 介面與工程化設計',
+  tagline: '媒體背景轉職前端工程師，擅長前端介面開發、AWS 雲端串接與跨團隊溝通',
   email: 'keychenwork2018@gmail.com',
   phone: '0918-308-339',
   github: 'github.com/keychen97',

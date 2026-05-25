@@ -66,7 +66,7 @@ export default function ProjectCard({
             <img
               src={p.thumbnail}
               alt={p.name}
-              className="w-32 h-full min-h-[100px] object-contain border border-rule rounded-[2px] bg-chip p-2"
+              className="w-32 h-full min-h-[100px] object-contain rounded-[2px]"
             />
           ) : (
             <div className="w-32 h-full min-h-[100px] stripe-placeholder border border-rule rounded-[2px] flex items-center justify-center">
