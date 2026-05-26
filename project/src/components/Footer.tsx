@@ -58,17 +58,19 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted mb-3">
-            Colophon
-          </div>
-          <p className="text-muted leading-relaxed">
-            排版參考 Wikipedia 與技術文件慣例。
-            <br />
-            字型：IBM Plex Sans / Mono / Serif。
-            <br />
-            Accent <span className="font-mono">#0066CC</span>。本站以 React +
-            TypeScript + Tailwind 建構。
-          </p>
+          <p className="text-xs font-mono uppercase tracking-widest text-muted mb-4">CONNECT</p>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <a href="https://www.linkedin.com/in/keychen97" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+                linkedin.com/in/keychen97
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/keychen97" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+                github.com/keychen97
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="border-t border-softrule">
